@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PDP Clone</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<aside>
+		<nav>
+			<div class="icon">
+				<img src="./fotos/lightlogo.svg" alt="">
+			</div>
+			<div class="navs">
+				<ul>
+					<li><a href="#">Biz haqimizda</a></li>
+					<li><a href="index.html">Ta'lim</a></li>
+					<li><a href="#">Qabul</a></li>
+					<li><a href="#">Yangiliklar</a></li>
+					<li><a href="#">Bog’lanish</a></li>
+				</ul>
+			</div>
+			<div class="circle-main">
+				<h1>IMTIHONGA <br>RO’YXATDAN <br>O’TISH</h1>
+			</div>
+			</div>
+			<span class="circle circle-1"></span>
+			<span class="circle circle-2"></span>
+			<span class="circle circle-3"></span>
+			<span class="circle circle-4"></span>
+			<span class="circle circle-5"></span>
+			<div class="nav-btn">
+				<a href="#">
+					<button>Grantga ariza topshirish</button>
+				</a>
+			</div>
+			<span class="line"></span>
+			<div class="language">
+				<button>UZ</button>
+				<tochka>•</tochka> <button><span>ENG</span></button>
+			</div>
+		</nav>
+	</aside>
+	<div class="info-foto">
+		<img src="https://picsum.photos/1920/1080?random=1" alt="1">
+		<img src="https://picsum.photos/1920/1080?random=2" alt="2">
+		<img src="https://picsum.photos/1920/1080?random=3" alt="3">
+	</div>
+
+
+
+
+
+
+	<script>
+		const container = document.querySelector('.info-foto')
+
+		container.addEventListener('wheel', function (e) {
+			e.preventDefault()
+
+			// Если скроллят вбок — игнорируем
+			if (e.deltaX !== 0) return
+
+			// Если вверх/вниз — двигаем вбок
+			container.scrollLeft += e.deltaY
+		}, { passive: false })
+	</script>
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
